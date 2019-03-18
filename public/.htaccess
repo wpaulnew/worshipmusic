@@ -1,0 +1,14 @@
+AddDefaultCharset utf-8
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#Когда идет обновление сайта, я включаю это
+#DirectoryIndex update.html
+#RewriteRule ^.*$ update.html?$1 [NC,L]
+
+#Когда обновление закончилась я включаю это
+RewriteRule ^(.*)$ index.php?$1 [NC,L]
+

@@ -1,0 +1,13 @@
+{
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\controllers\\": "app/controllers",
+      "app\\models\\": "app/models",
+      "vendor\\core\\": "vendor/core",
+      "vendor\\library\\": "vendor/library"
+    }
+  }
+}
